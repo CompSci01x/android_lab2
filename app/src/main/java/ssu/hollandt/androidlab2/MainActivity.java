@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     // class variables
     private Button navigateButton;
-
+    // test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
