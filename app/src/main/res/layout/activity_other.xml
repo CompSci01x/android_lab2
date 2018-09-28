@@ -5,17 +5,23 @@
     android:layout_width="wrap_content"
     android:text="@string/welcome_text"
     android:layout_height="wrap_content"
-    tools:context="OtherActivity">
+    tools:context=".OtherActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_text"/>
+        android:text="@string/welcome_text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/welcome_text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/return_button_text"
+        android:id="@+id/return_button"/>
 
 
 </android.support.constraint.ConstraintLayout>
