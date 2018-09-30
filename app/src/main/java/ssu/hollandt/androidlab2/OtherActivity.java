@@ -27,7 +27,7 @@ public class OtherActivity extends AppCompatActivity {
         if(name == null || name.isEmpty()) {
             name = "Not Bob";
         }
-        welcomeText.findViewById(R.id.welcome_text);
+        welcomeText.<EditText>findViewById(R.id.welcome_text);
         welcomeText.setText("Welcome, " + name);
         returnToMainButton = findViewById(R.id.return_button);
         returnToMainButton.setOnClickListener(new View.OnClickListener() {
