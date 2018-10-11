@@ -2,7 +2,7 @@
     <string name="app_name">AndroidLab2</string>
     <string name="welcome_text">Welcome to OtherActivity!</string>
     <string name="button_text">Go to OtherActivity</string>
-
-
+    <string name="name_edit_text">Enter your name:</string>
+    <string name="button2_text">Return to MainActivity</string>
 
 </resources>
