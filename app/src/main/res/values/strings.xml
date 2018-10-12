@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">AndroidLab2</string>
+    <string name="welcome_text"></string>
+    <string name="button_text"></string>
 
 
 </resources>
