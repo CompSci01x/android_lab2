@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">AndroidLab2</string>
+
     <string name="welcome_text">Welcome to OtherActivity!</string>
     <string name="button_text">Go to OtherActivity</string>
     <string name="return_button_text">Return to Main Activity</string>
+
 
 
 </resources>
