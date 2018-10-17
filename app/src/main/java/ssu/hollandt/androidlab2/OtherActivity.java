@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.view.View;
 import android.widget.*;
-
+//finished
 public class OtherActivity extends AppCompatActivity {
 
     private Button navigateButon;
