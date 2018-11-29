@@ -9,13 +9,17 @@
     tools:context=".OtherActivity">
 
     <TextView
-        android:id="@+id/welcome_text"
         android:text="@string/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Button
-        android:id="@+id/return_button"
+        android:id="@+id/return_to_main_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/return_button_text" />

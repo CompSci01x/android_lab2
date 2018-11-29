@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     // class variables
     private Button navigateButton;
-
     private EditText nameEditText;
 
     @Override

@@ -11,7 +11,7 @@ public class OtherActivity extends AppCompatActivity {
 
     public static final String NAME_KEY = "USER_NAME";
     public TextView welcomeText;
-    public Button returnButton;
+    public Button returnToMainButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,8 @@ public class OtherActivity extends AppCompatActivity {
         }
         welcomeText = findViewById(R.id.welcome_text);
         welcomeText.setText("Welcome, " + name);
-        returnButton = findViewById(R.id.return_button);
-        returnButton.setOnClickListener(new View.OnClickListener() {
+        returnToMainButton = findViewById(R.id.return_to_main_button);
+        returnToMainButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OtherActivity.this, MainActivity.class);
