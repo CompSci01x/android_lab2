@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         navigateButton = findViewById(R.id.navigate_button);
         navigateButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 String name = nameEditText.getText().toString();
                 Intent intent = new Intent(MainActivity.this, OtherActivity.class);
 
