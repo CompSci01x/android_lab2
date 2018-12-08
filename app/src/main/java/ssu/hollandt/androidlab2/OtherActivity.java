@@ -10,25 +10,31 @@ import android.widget.TextView;
 public class OtherActivity extends AppCompatActivity {
 
     public static final String NAME_KEY = "USER_NAME";
-    public TextView welcomeText;
-    public Button returnButton;
+    private TextView welcomeText;
+
+    private Button navigateButton2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other);
+
         Intent newIntent = getIntent();
         String name = newIntent.getStringExtra(NAME_KEY);
-        if(name == null || name.isEmpty()) {
-            name = "Not Bob";
-        }
         welcomeText = findViewById(R.id.welcome_text);
+
+        navigateButton2 = findViewById(R.id.navigate_button2);
+
+        if(name == null || name.isEmpty()) {
+            name = "Not bob";
+        }
+
         welcomeText.setText("Welcome, " + name);
-        returnButton = findViewById(R.id.return_button);
-        returnButton.setOnClickListener(new View.OnClickListener() {
+
+        navigateButton2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OtherActivity.this, MainActivity.class);
+            public void onClick(View view) {
+                Intent intent = new Intent(OtherActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });
