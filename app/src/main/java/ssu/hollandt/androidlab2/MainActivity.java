@@ -8,10 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
-    // class variables
-    private Button navigateButton;
     private EditText nameEditText;
+    private Button navigateButton;
+    // class variables
 
 
     @Override
@@ -19,32 +18,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         navigateButton = findViewById(R.id.navigate_button);
-        navigateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = nameEditText.getText().toString();
-                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
-
-                intent.putExtra(OtherActivity.NAME_KEY, name);
-                startActivity(intent);
-            }
-
-        });
         nameEditText = findViewById(R.id.name_edit_text);
-
-        nameEditText = findViewById(R.id.name_edit_text);
-        navigateButton = findViewById(R.id.navigate_button);
-
         navigateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String name = nameEditText.getText().toString();
-                Intent intent = new Intent(MainActivity.this,OtherActivity.class);
-
+                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
                 intent.putExtra(OtherActivity.NAME_KEY, name);
                 startActivity(intent);
             }
         });
+
 
     }
 }
