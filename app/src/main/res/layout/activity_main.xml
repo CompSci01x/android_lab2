@@ -9,19 +9,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your name: "
-        />
+        android:text="Enter your name: " />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/name_edit_text"
-        android:inputType="text"
-        />
+        android:inputType="text" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/navigate_button"
-        android:text="@string/button_text"
-        />
+        android:text="@string/button_text" />
 </LinearLayout>

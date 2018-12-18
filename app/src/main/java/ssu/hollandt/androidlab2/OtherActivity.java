@@ -17,13 +17,16 @@ public class OtherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other);
+
         Intent newIntent = getIntent();
         welcomeText = findViewById(R.id.welcome_text);
         returnButton = findViewById(R.id.return_button);
         String name = newIntent.getStringExtra(NAME_KEY);
+
         if(name == null || name.isEmpty()) {
             name = "Not Bob";
         }
+
         welcomeText.setText("Welcome, " + name);
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,4 +37,5 @@ public class OtherActivity extends AppCompatActivity {
 
         });
     }
+
 }

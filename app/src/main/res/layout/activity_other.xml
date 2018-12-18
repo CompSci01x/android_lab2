@@ -26,4 +26,5 @@
         android:text="Return to Main Activity"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="0dp" />
+    
 </LinearLayout>
